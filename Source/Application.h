@@ -71,7 +71,7 @@ public:
 	static void GLFWKeyCallback(GLFWwindow * window, int key, int scanmode, int action, int mods);
 private:
 	// --- Tweakbar ---
-	void Application::UpdateObjectTweakbar();
+	void UpdateObjectTweakbar();
 	TwBar * mainTweakBar = nullptr;
 	TwBar * objectTweakBar = nullptr;
 	std::vector<MeshRenderer*> tweakableRenderers;
