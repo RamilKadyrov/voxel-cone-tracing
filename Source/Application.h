@@ -3,7 +3,7 @@
 #pragma once
 
 #include "Graphic\Graphics.h"
-#include <AntTweakBar\AntTweakBar.h>
+#include <AntTweakBar.h>
 
 class Scene;
 struct GLFWwindow;

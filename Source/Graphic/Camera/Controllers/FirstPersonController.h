@@ -3,13 +3,14 @@
 #include <iostream> // TODO: Remove.
 
 #define GLEW_STATIC
-#include <glew.h>
-#include <glfw3.h>
-#include <gtx/rotate_vector.hpp>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/rotate_vector.hpp>
 
 #include "../../Camera/Camera.h"
 #include "../../../Time/Time.h"
-#include "../../Camera\PerspectiveCamera.h"
+#include "../../Camera/PerspectiveCamera.h"
 #include "../../../Application.h"
 
 /// <summary> A first person controller that can be attached to a camera. </summary>

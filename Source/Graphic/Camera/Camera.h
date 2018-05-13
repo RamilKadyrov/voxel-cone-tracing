@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gtc\matrix_transform.hpp"
+#include "glm/glm.hpp"///gtc/matrix_transform.hpp"
 
 /// <summary> A camera base class. </summary>
 class Camera {

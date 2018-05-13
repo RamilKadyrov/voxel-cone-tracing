@@ -1,13 +1,13 @@
 #pragma once
 
-#include "../Source/Shape/Transform.h"
+#include "../../Shape/Transform.h"
 #include "../Material/MaterialSetting.h"
 
 #define GLEW_STATIC
-#include <glew.h>
-#include <glfw3.h>
-#include <gtc/type_ptr.hpp>
-#include <glm.hpp>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
 
 class Mesh;
 

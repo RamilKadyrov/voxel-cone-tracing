@@ -26,7 +26,7 @@ void MaterialStore::AddNewMaterial(
 	using ST = Shader::ShaderType;
 	Shader *v, *f, *g, *te, *tc;
 	v = f = g = te = tc = nullptr;
-	const std::string shaderPath = "Shaders\\";
+	const std::string shaderPath = "Shaders/";
 	if (vertexPath) { v = new Shader(shaderPath + vertexPath, ST::VERTEX); }
 	if (fragmentPath) { f = new Shader(shaderPath + fragmentPath, ST::FRAGMENT); }
 	if (geometryPath) { g = new Shader(shaderPath + geometryPath, ST::GEOMETRY); }

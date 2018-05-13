@@ -6,18 +6,18 @@
 #include <vector>
 
 // External.
-#include <glm.hpp>
-#include <gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // Internal.
 #include "Texture2D.h"
-#include "Material\Material.h"
-#include "Camera\OrthographicCamera.h"
-#include "Material\MaterialStore.h"
+#include "Material/Material.h"
+#include "Camera/OrthographicCamera.h"
+#include "Material/MaterialStore.h"
 #include "../Time/Time.h"
 #include "../Shape/Mesh.h"
 #include "../Shape/StandardShapes.h"
-#include "Renderer\MeshRenderer.h"
+#include "Renderer/MeshRenderer.h"
 #include "../Utility/ObjLoader.h"
 #include "../Shape/Shape.h"
 #include "../Application.h"
@@ -198,7 +198,7 @@ void Graphics::initVoxelVisualization(unsigned int viewportWidth, unsigned int v
 	vvfbo2 = new FBO(viewportHeight, viewportWidth);
 
 	// Rendering cube.
-	cubeShape = ObjLoader::loadObjFile("Assets\\Models\\cube.obj");
+	cubeShape = ObjLoader::loadObjFile("Assets/Models/cube.obj");
 	assert(cubeShape->meshes.size() == 1);
 	cubeMeshRenderer = new MeshRenderer(&cubeShape->meshes[0]);
 

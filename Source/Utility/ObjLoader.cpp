@@ -10,12 +10,12 @@
 #define GLEW_STATIC
 #include <iostream>
 #include <iomanip>
-#include <glew.h>
-#include <glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include "../time/Time.h"
 #endif
 
-#include "External/tiny_obj_loader.h"
+#include "tiny_obj_loader.h"
 #include "../Shape/VertexData.h"
 #include "../Shape/Mesh.h"
 
@@ -25,13 +25,13 @@ Shape * ObjLoader::loadObjFile(const std::string path) {
 	double took;
 	std::cout << "Loading obj '" << path << "'..." << std::endl;
 #endif
-
 	std::vector<tinyobj::shape_t> shapes;
 	std::vector<tinyobj::material_t> materials;
 	Shape * result = new Shape();
 
 	std::string err;
-	if (!tinyobj::LoadObj(shapes, materials, err, path.c_str()) || shapes.size() == 0) {
+
+	if (!tinyobj::LoadObj( shapes, materials, err, path.c_str()) || shapes.size() == 0) {
 #if __UTILITY_LOG_LOADING_TIME
 		std::cerr << "Failed to load object with path '" << path << "'. Error message:" << std::endl << err << std::endl;
 #endif
