@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 #include "../../Shape/Transform.h"
 #include "../Material/MaterialSetting.h"
